@@ -30,7 +30,6 @@
     </style>
 </head>
 <body class="bg-black text-white overflow-x-hidden">
-    <!-- НАВИГАЦИЯ -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
@@ -45,7 +44,6 @@
         </div>
     </nav>
 
-    <!-- ГЕРО СЕКЦИЯ -->
     <section class="hero-bg min-h-screen flex items-center relative">
         <div class="absolute inset-0 overflow-hidden pointer-events-none">
             <div class="absolute top-20 left-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
@@ -97,7 +95,6 @@
         </div>
     </section>
 
-    <!-- О НАС -->
     <section id="about" class="py-24 bg-zinc-950">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -138,7 +135,6 @@
         </div>
     </section>
 
-    <!-- УСЛУГИ -->
     <section id="services" class="py-24">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-5xl font-bold title-font text-center mb-16">Что мы делаем</h2>
@@ -168,7 +164,6 @@
         </div>
     </section>
 
-    <!-- ФУТЕР / КОНТАКТЫ -->
     <footer id="contacts" class="bg-zinc-950 py-20 border-t border-white/10">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <p class="text-3xl font-medium mb-6">Готовы обсудить ваш проект?</p>
@@ -184,7 +179,6 @@
     </footer>
 
     <script>
-        // Плавный скролл
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 if (this.getAttribute('href') !== '#') {
