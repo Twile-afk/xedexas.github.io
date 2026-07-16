@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xedexas — Создаём крутые сайты</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .hero-bg {
+            background: radial-gradient(at center center, #1a1a2e 0%, #0f0f1e 70%);
+        }
+
+        .neon-text {
+            text-shadow: 
+                0 0 15px #00ff9d,
+                0 0 30px #00ff9d,
+                0 0 50px #00ff9d;
+        }
+    </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- НАВИГАЦИЯ -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-emerald-500 rounded-xl flex items-center justify-center text-black font-bold text-xl">X</div>
+                <span class="text-2xl font-bold title-font tracking-tighter">Xedexas</span>
+            </div>
+            <div class="flex items-center gap-8 text-sm uppercase tracking-widest">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">О нас</a>
+                <a href="#services" class="hover:text-emerald-400 transition-colors">Услуги</a>
+                <a href="#contacts" class="hover:text-emerald-400 transition-colors">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ГЕРО СЕКЦИЯ -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-20 left-10 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-40 right-20 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10 pt-20">
+            <h1 class="title-font text-8xl md:text-[9rem] font-black tracking-tighter leading-none neon-text mb-8">
+                XEDEXAS
+            </h1>
+
+            <div class="max-w-3xl mx-auto space-y-6 text-3xl md:text-5xl font-medium">
+                <p class="bg-gradient-to-r from-emerald-300 to-cyan-300 bg-clip-text text-transparent">
+                    Сделаем быстро и качественно любой сайт!
+                </p>
+                <p class="text-4xl md:text-6xl font-bold text-emerald-400">
+                    По очень вкусной цене
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <a href="https://t.me/xedexas" 
+                   target="_blank"
+                   class="group inline-flex items-center gap-4 bg-white text-black px-12 py-7 rounded-3xl text-2xl font-semibold hover:scale-105 transition-all shadow-2xl shadow-emerald-500/50">
+                    <i class="fa-brands fa-telegram text-4xl"></i>
+                    <span>Написать в Telegram</span>
+                </a>
+            </div>
+
+            <div class="mt-12 text-zinc-400 flex items-center justify-center gap-8 text-sm">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>От 3 дней</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>Современный дизайн</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-emerald-400"></i>
+                    <span>Адаптив под все устройства</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-zinc-400">
+            <span class="text-xs tracking-widest">Прокрути вниз</span>
+            <i class="fa-solid fa-chevron-down mt-2 animate-bounce"></i>
+        </div>
+    </section>
+
+    <!-- О НАС -->
+    <section id="about" class="py-24 bg-zinc-950">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold title-font tracking-tight mb-6">О нас</h2>
+            </div>
+            
+            <div class="prose prose-invert mx-auto text-xl leading-relaxed text-zinc-300">
+                <p class="text-2xl font-medium text-white mb-8">
+                    Мы — Команда Xedexas. Создаём современные, быстрые и продающие сайты под ключ.
+                </p>
+                <p>
+                    Специализируемся на разработке лендингов, многостраничных сайтов, интернет-магазинов и корпоративных ресурсов. 
+                    Работаем быстро, качественно и по честной цене.
+                </p>
+                <p>
+                    Каждый проект делаем с душой: продуманный дизайн, чистый код, отличная оптимизация и полная адаптивность. 
+                    Наша цель — чтобы ваш сайт не просто выглядел круто, а реально приносил вам клиентов и деньги.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-emerald-400">50+</div>
+                        <div class="text-sm text-zinc-400 mt-1">Реализованных проектов</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-emerald-400">15</div>
+                        <div class="text-sm text-zinc-400 mt-1">Дней — средний срок</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-emerald-400">100%</div>
+                        <div class="text-sm text-zinc-400 mt-1">Удовлетворённость клиентов</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-emerald-400">24/7</div>
+                        <div class="text-sm text-zinc-400 mt-1">Поддержка</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section id="services" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-5xl font-bold title-font text-center mb-16">Что мы делаем</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 p-10 rounded-3xl hover:bg-zinc-800 transition-all group">
+                    <div class="text-5xl mb-6">🌐</div>
+                    <h3 class="text-3xl font-semibold mb-4">Лендинги и продающие сайты</h3>
+                    <p class="text-zinc-400">Яркие одностраничники, которые конвертируют посетителей в клиентов.</p>
+                </div>
+                <div class="bg-zinc-900 p-10 rounded-3xl hover:bg-zinc-800 transition-all group">
+                    <div class="text-5xl mb-6">🛒</div>
+                    <h3 class="text-3xl font-semibold mb-4">Интернет-магазины</h3>
+                    <p class="text-zinc-400">Удобные магазины с корзиной, оплатой и интеграциями.</p>
+                </div>
+                <div class="bg-zinc-900 p-10 rounded-3xl hover:bg-zinc-800 transition-all group">
+                    <div class="text-5xl mb-6">💼</div>
+                    <h3 class="text-3xl font-semibold mb-4">Корпоративные сайты</h3>
+                    <p class="text-zinc-400">Солидные сайты для компаний и бизнеса.</p>
+                </div>
+                <div class="bg-zinc-900 p-10 rounded-3xl hover:bg-zinc-800 transition-all group">
+                    <div class="text-5xl mb-6">⚡</div>
+                    <h3 class="text-3xl font-semibold mb-4">Доработка и поддержка</h3>
+                    <p class="text-zinc-400">Ускорим, обновим или полностью переделаем ваш текущий сайт.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФУТЕР / КОНТАКТЫ -->
+    <footer id="contacts" class="bg-zinc-950 py-20 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-3xl font-medium mb-6">Готовы обсудить ваш проект?</p>
+            <a href="https://t.me/xedexas" 
+               target="_blank"
+               class="inline-flex items-center gap-3 text-2xl bg-emerald-600 hover:bg-emerald-500 transition-colors px-10 py-6 rounded-2xl">
+                <i class="fa-brands fa-telegram"></i>
+                <span>Написать в Telegram @xedexas</span>
+            </a>
+            
+            <p class="mt-16 text-zinc-500">© 2026 Xedexas. Делаем сайты, от которых не оторваться.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Плавный скролл
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
